@@ -1,6 +1,7 @@
 from aocd import get_data
 
-input = get_data(day=2, year=2024)
+year, day = [int(v) for v in __file__.split("/")[-3:-1]]
+input = get_data(day=day, year=year)
 
 example = """7 6 4 2 1
 1 2 7 8 9

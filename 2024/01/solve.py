@@ -1,17 +1,20 @@
-with open("input.txt", "r") as f:
-    contents = f.read()
+from aocd import get_data
 
-example_input = """3   4
+year, day = [int(v) for v in __file__.split("/")[-3:-1]]
+input = get_data(day=day, year=year)
+
+
+example = """3   4
 4   3
 2   5
 1   3
 3   9
 3   3
 """
-# contents = example_input
+# input = example
 
 a, b = [], []
-for line in contents.splitlines():
+for line in input.splitlines():
     av, bv = [v for v in line.split(" ") if v]
     a.append(int(av))
     b.append(int(bv))
