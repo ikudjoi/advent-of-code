@@ -1,6 +1,4 @@
 from aocd import get_data
-import itertools
-import math
 
 year, day = [int(v) for v in __file__.split("/")[-3:-1]]
 input = "2333133121414131402"
